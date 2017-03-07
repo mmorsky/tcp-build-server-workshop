@@ -11,9 +11,11 @@ In this workshop we'll build our own simple server and serve our web page using 
 
 
 ## Get started
-* We recommend you use [Chrome](https://www.google.com/chrome/browser/desktop/index.html) browser in this workshop. We'll demo some of the functionality of the browser tools, but you can use any browser you want in case you don't want to install Chrome.
+* We recommend you use [Chrome](https://www.google.com/chrome/browser/desktop/index.html) browser in this workshop, since we'll demo some of the functionality of the browser tools. But of course you can use any browser you want in case you don't want to install Chrome.
 * Install [Node.js](https://nodejs.org/en/): download the installation package from the website and follow the installation instructions.
 * Download the source code from this repository to your computer
+* You need basically two tools for the workshop: a terminal and an editor for coding. Mac: you can use the build in Terminal application, Windows: you can use the Command Line application.
+* Editor: you can use any text editor you like, or you can download a free [Visual Studio Code](https://code.visualstudio.com/) editor which is a good web development environment.
 * Open a terminal and navigate to the folder where you put the source code and run the following command:
 ```
 node server.js
@@ -103,7 +105,7 @@ if (request.url === '/') {
 writeResponse(response, url);
 ```
 
-And also need to modify the ```writeResponse``` function so that we use the url we get to decide which file we should read and write to the response:
+And also need to modify the ```writeResponse``` function so that we take the ```url``` as a parameter to the function and use it to decide which file we should read and write to the response like:
 
 ```
  fs.readFile('public' + url, function(err, html)...

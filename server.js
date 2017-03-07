@@ -7,7 +7,7 @@ const port = 8080;
 /*
  * Write response to the client
  */
-const writeResponse = function(response, url) {
+const writeResponse = function(response) {
     //Tell the client that the request was 'OK'
     response.statusCode = 200;
     //Tell the client we're sending html text

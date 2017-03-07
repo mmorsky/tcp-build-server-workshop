@@ -2,6 +2,15 @@
 In this workshop we'll build our own simple server and serve our web page using it. We'll use Node.js to code the server and basic web technologies in the web page.
 
 ## Project setup
+* To implement our server we'll use a backend JavaScript framework called Node.js. Traditionally JavaScript is a language used in the browsers on the client side, but this framework makes it possible to run JS also on the server side.
+* The server code is implemented in file called *server.js*. In this file we describe how the server behaves and responds to the requests we get from our browser.
+* The files that our server is going to serve to the client are located in the folder called *public*.
+* *index.html* file is the front page of our web application and contains the HTML for the page
+* *styles.css* is a style file which contains the style descriptions for our HTML
+* *script.js* file contains some client side javascript which adds some functionality to our page.
+
+
+## Get started
 * We recommend you use [Chrome](https://www.google.com/chrome/browser/desktop/index.html) browser in this workshop. We'll demo some of the functionality of the browser tools, but you can use any browser you want in case you don't want to install Chrome.
 * Install [Node.js](https://nodejs.org/en/): download the installation package from the website and follow the installation instructions.
 * Download the source code from this repository to your computer
